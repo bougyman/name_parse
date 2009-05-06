@@ -1,3 +1,11 @@
+[9481b20 | Wed May 06 21:04:11 UTC 2009] Jayson Vaughn (thedonvaughn) <jayson.vaughn@gmail.com>
+
+  * added bacon task back from FSR, added Bacon.summary_on_exit to spec/helper.rb
+
+[5c65ac6 | Wed May 06 20:25:18 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * Version 0.0.2
+
 [f34e13b | Wed May 06 20:09:19 UTC 2009] Jayson Vaughn (thedonvaughn) <jayson.vaughn@gmail.com>
 
   * added handling of multiple last names
