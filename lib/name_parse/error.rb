@@ -1,4 +1,4 @@
 module NameParse
-  class Error < StandardError
+  class UnknownFormat < StandardError
   end
 end

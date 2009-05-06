@@ -11,7 +11,7 @@ PROJECT_SPECS = FileList[
   'spec/**/*.rb'
 ].reject { |h| h.match(/helper.rb/) }
 
-PROJECT_MODULE = 'Name Parse'
+PROJECT_MODULE = 'NameParse'
 PROJECT_README = 'README'
 #PROJECT_RUBYFORGE_GROUP_ID = 3034
 PROJECT_COPYRIGHT = [
