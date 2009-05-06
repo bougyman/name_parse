@@ -16,3 +16,5 @@ rescue LoadError
   require "rubygems"
   require "name_parse"
 end
+
+Bacon.summary_on_exit
