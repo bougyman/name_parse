@@ -102,4 +102,17 @@ describe "Name Parser" do
     name_p_long.prefix.should == "Dr"
   end
 
+  it "Should Parse a Name with C/O as Prefix" do
+    name_p_co = NameParse["C/O Chris Elrod"]
+    name_p_co.first_name.should == "Chris"
+    name_p_co.last.should == "Elrod"
+    name_p_co.prefix.should == "C/O"
+  end
+
+  it "Should parse a 2 lastname name with a comma" do
+    name = NameParse["Alfredo Lorenzo, Frank"]
+    name.first_name.should == "Frank"
+    name.last.should == "Alfredo Lorenzo"
+  end
+
 end

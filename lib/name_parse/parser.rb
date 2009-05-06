@@ -8,7 +8,7 @@ module NameParse
     end
 
     def prefix_re
-      /(?:dr|mrs?|ms|miss|mister|sgt|cpt|cpl)\.?/i
+      /(?:c\/o|dr|mrs?|ms|miss|mister|sgt|cpt|cpl)\.?/i
     end
 
     def first_name_re
@@ -50,6 +50,9 @@ module NameParse
       when /^(#{last_name_re}),(?:\s+)?(#{first_name_re})(?:\s+(#{middle_name_re}))?$/
         @first, @last, @middle = $2, $1, $3
         @matched = :last_comma_first_mid
+      # Comma with lots of lastnames, a first name, optional middle name
+      when /^((?:#{last_name_re}(?:\s+)?)+),(?:\s+)(#{first_name_re})(?:\s+(#{middle_name_re}))?$/
+        @first, @last, @middle = $2, $1, $3
       else 
         raise UnknownFormat, "Could not parse #{@raw_name}"
       end
