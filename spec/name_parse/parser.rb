@@ -26,6 +26,15 @@ describe "Name Parser" do
     name_p_std.last.should == "Rogers"
   end
 
+  it "Should Parse A Prefix, First, Middle Initial (with period), and Last Without Commas" do
+    name_p_std = NameParse["Mr James T. Kirk"]
+    name_p_std.prefix.should == "Mr"
+    name_p_std.first.should == "James"
+    name_p_std.middle.should == "T."
+    name_p_std.middle_i.should == "T"
+    name_p_std.last.should == "Kirk"
+  end
+
   it "Should Parse A First, Middle Initial, and Last With Commas" do
     name_p_std = NameParse["Rogers, Tom J"]
     name_p_std.first.should == "Tom"
