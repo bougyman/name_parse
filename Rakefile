@@ -8,9 +8,8 @@ require 'date'
 require "lib/name_parse"
 
 PROJECT_SPECS = FileList[
-  'spec/*.rb',
-  'lib/skel/spec/*.rb'
-]
+  'spec/**/*.rb'
+].reject { |h| h.match(/helper.rb/) }
 
 PROJECT_MODULE = 'Name Parse'
 PROJECT_README = 'README'
@@ -36,19 +35,20 @@ GEMSPEC = Gem::Specification.new{|s|
   s.files        = `git ls-files`.split("\n").sort.reject { |f| IGNORE_FILES.detect { |exp| f.match(exp)  } }
   s.has_rdoc     = true
   s.require_path = 'lib'
-  s.bindir = "bin"
-  s.executables = ["name_parse"]
+  #s.bindir = "bin"
+  #s.executables = ["name_parse"]
   s.rubyforge_project = "pastr"
 
   s.post_install_message = <<MESSAGE.strip
 ============================================================
 
 Thank you for installing Name Parse!
-Verify your install with
-# name-parse "Dr. Phil Seuss, Jr."
 
 ============================================================
 MESSAGE
+
+"Verify your install with"
+'# name-parse "Dr. Phil Seuss, Jr."'
 }
 
 Dir['tasks/*.rake'].each{|f| import(f) }

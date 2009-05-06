@@ -1,3 +1,3 @@
-module NameParse
-  VERSION = '0.0.1'
+module Name Parse
+  VERSION = "2009.05.06"
 end
