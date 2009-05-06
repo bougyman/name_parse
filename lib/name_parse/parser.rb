@@ -1,6 +1,6 @@
 module NameParse
   class Parser
-    attr_reader :first, :last, :suffix, :prefix, :middle, :raw
+    attr_reader :first, :last, :suffix, :prefix, :middle, :raw, :matched
 
     def initialize(name_string = nil)
       @raw = name_string
@@ -53,6 +53,7 @@ module NameParse
       # Comma with lots of lastnames, a first name, optional middle name
       when /^((?:#{last_name_re}(?:\s+)?)+),(?:\s+)(#{first_name_re})(?:\s+(#{middle_name_re}))?$/
         @first, @last, @middle = $2, $1, $3
+        @matched = :multi_last_comma
       else 
         raise UnknownFormat, "Could not parse #{@raw_name}"
       end

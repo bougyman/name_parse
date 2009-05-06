@@ -1,6 +1,15 @@
+AUTHORS
+CHANGELOG
+MANIFEST
+README
 Rakefile
 lib/name_parse.rb
+lib/name_parse/error.rb
+lib/name_parse/parser.rb
 lib/name_parse/version.rb
+name_parse.gemspec
+spec/helper.rb
+spec/name_parse/parser.rb
 tasks/authors.rake
 tasks/bacon.rake
 tasks/changelog.rake
@@ -13,3 +22,4 @@ tasks/rcov.rake
 tasks/release.rake
 tasks/reversion.rake
 tasks/setup.rake
+tasks/yard.rake

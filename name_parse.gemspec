@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{name_parse}
-  s.version = "2009.05.06"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["TJ Vanderpoel"]
   s.date = %q{2009-05-06}
   s.description = %q{Parse name strings into their constituent parts}
   s.email = %q{bougy.man@gmail.com}
-  s.files = ["Rakefile", "lib/name_parse.rb", "lib/name_parse/version.rb", "tasks/authors.rake", "tasks/bacon.rake", "tasks/changelog.rake", "tasks/copyright.rake", "tasks/gem.rake", "tasks/gem_installer.rake", "tasks/install_dependencies.rake", "tasks/manifest.rake", "tasks/rcov.rake", "tasks/release.rake", "tasks/reversion.rake", "tasks/setup.rake"]
+  s.files = ["AUTHORS", "CHANGELOG", "MANIFEST", "README", "Rakefile", "lib/name_parse.rb", "lib/name_parse/error.rb", "lib/name_parse/parser.rb", "lib/name_parse/version.rb", "name_parse.gemspec", "spec/helper.rb", "spec/name_parse/parser.rb", "tasks/authors.rake", "tasks/bacon.rake", "tasks/changelog.rake", "tasks/copyright.rake", "tasks/gem.rake", "tasks/gem_installer.rake", "tasks/install_dependencies.rake", "tasks/manifest.rake", "tasks/rcov.rake", "tasks/release.rake", "tasks/reversion.rake", "tasks/setup.rake", "tasks/yard.rake"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/bougyman/name_parse}
   s.post_install_message = %q{============================================================
