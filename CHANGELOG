@@ -1,3 +1,19 @@
+[736bf3d | Thu May 07 16:54:52 UTC 2009] TJ Vanderpoel <bougyman@zero.(none)>
+
+  * completed refactoring to methodized matchers in #parse
+
+[e58f6e4 | Thu May 07 16:29:25 UTC 2009] TJ Vanderpoel <bougyman@zero.(none)>
+
+  * continued to refacor into a methodized pattern for matching in #parse
+
+[835e508 | Thu May 07 03:29:00 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * ignore csv files
+
+[fcb13a0 | Thu May 07 03:28:14 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * added README as description
+
 [016010c | Thu May 07 03:18:51 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
 
   * Version 0.0.4
