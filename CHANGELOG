@@ -1,3 +1,11 @@
+[5d85b44 | Thu May 07 03:14:31 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * methodized when match target for first_name.  TODO: make the other when matchers follow the same format
+
+[09dee2a | Wed May 06 21:05:00 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * Version 0.0.3
+
 [9481b20 | Wed May 06 21:04:11 UTC 2009] Jayson Vaughn (thedonvaughn) <jayson.vaughn@gmail.com>
 
   * added bacon task back from FSR, added Bacon.summary_on_exit to spec/helper.rb
