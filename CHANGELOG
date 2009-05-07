@@ -1,3 +1,7 @@
+[016010c | Thu May 07 03:18:51 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
+
+  * Version 0.0.4
+
 [5d85b44 | Thu May 07 03:14:31 UTC 2009] TJ Vanderpoel <bougy.man@gmail.com>
 
   * methodized when match target for first_name.  TODO: make the other when matchers follow the same format
