@@ -14,6 +14,15 @@ module NameParse
     def first_name_re
       /\w[-.'\w]+/
     end
+    
+    def first_last(match = nil)
+      if match.nil?
+        /^(#{first_name_re})\s+(#{last_name_re})$/
+      else
+        @matched = :first_last
+        @first, @last = match.to_a[1 .. 2]
+      end
+    end
 
     def last_name_re
       /(?:(?:v[ao]n(?:\s+der?)?|de\s+la)\s+)?\w[-.'\w]+/i
@@ -31,9 +40,8 @@ module NameParse
     def parse(name)
       case name
       # just "Firstname Lastname"
-      when /^(#{first_name_re})\s+(#{last_name_re})$/
-        @first, @last = $1, $2
-        @matched = :first_last
+      when first_last
+        first_last($~)
       # Catch names with prefixes, no comma
       when /^(#{prefix_re})\s+(#{first_name_re})\s+(#{last_name_re})$/
         @prefix, @first, @last = $1, $2, $3
